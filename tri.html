@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<p>
+    according to pythagoras theorem</p>
+   <p> a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> 
+   </p>
+ 
+    <table style="border-spacing:0px; border-width:0px; font-family:verdana;">
+        <tr>
+            <td>             </td>
+          <td>
+      &nbsp;
+          </td>
+          <td>
+      _______
+          </td>
+        </tr>
+        <tr>
+            <td>  a =            </td>
+
+          <td style="padding:0px; font-size:larger">
+      &radic;
+          </td>
+          <td style="padding:0px;">
+      &nbsp;b<sup>2</sup> + &nbsp;c<sup>2</sup> 
+          </td>
+        </tr>
+      </table>
+
+
+<script>
+var canvasElement = document.querySelector("#myCanvas");
+var context = canvasElement.getContext("2d");
+
+// the triangle
+context.beginPath();
+context.moveTo(300, 100);
+context.lineTo(100, 300);
+context.lineTo(300, 300);
+context.closePath();
+// the outline
+context.lineWidth = 10;
+context.strokeStyle = '#666666';
+context.stroke();
+
+// the fill color
+context.fillStyle = "#FF0000";
+context.fill();
+
+context.font = "30px Arial";
+context.fillStyle = "#000000";
+context.fillText("a", 200, 340);
+context.fillText("b", 320, 200);
+context.fillText("c", 140, 210);
+</script>
+
+</body>
+</html>
